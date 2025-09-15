@@ -1,0 +1,1 @@
+# Paquete principal del sistema de refugio de mascotas
