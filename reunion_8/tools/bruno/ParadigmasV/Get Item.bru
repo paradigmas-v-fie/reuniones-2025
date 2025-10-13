@@ -1,0 +1,19 @@
+meta {
+  name: Get Item
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/items/:item_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  item_id: ID-0001
+}
+
+settings {
+  encodeUrl: true
+}
