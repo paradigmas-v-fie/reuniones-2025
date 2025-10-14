@@ -1,0 +1,19 @@
+meta {
+  name: Delete item
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://127.0.0.1:8000/items/:item_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  item_id: ID-0001
+}
+
+settings {
+  encodeUrl: true
+}
