@@ -1,0 +1,20 @@
+meta {
+  name: Eliminar
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8000/productos/:product_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  product_id: 73469a75-98bb-4cd6-a655-b0e6b6e95f29
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
