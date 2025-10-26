@@ -1,0 +1,23 @@
+meta {
+  name: Crear
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8000/productos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "mesa",
+    "precio_base": 5000.00,
+    "regulado": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

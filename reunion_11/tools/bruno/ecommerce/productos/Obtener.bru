@@ -1,0 +1,20 @@
+meta {
+  name: Obtener
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8000/productos/:product_id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  product_id: 842c5dda-6f09-49ee-b00c-5cd9815aca19
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
